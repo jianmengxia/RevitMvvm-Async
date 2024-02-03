@@ -1,0 +1,19 @@
+﻿<Window x:Class="RevitAsyncTest.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RevitAsyncTest"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        mc:Ignorable="d" 
+             Width="180" Height="200" >
+    <Grid>
+        <StackPanel>
+            <Button Content="绘制墙" Margin="10,10" Command="{Binding DrawWallCommand}"/>
+            <Button Content="删除墙" Margin="10,10" Command="{Binding DeleteWallCommand}"/>
+            <Button Content="修改墙" Margin="10,10" Command="{Binding ModifyWallCommand}"/>
+            <Button Content="查看墙" Margin="10,10" Command="{Binding LookupWallCommand}"/>
+        </StackPanel>
+    </Grid>
+</Window>
